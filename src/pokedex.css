@@ -1,0 +1,25 @@
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pokedex-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.pokedex-card {
+  flex: 1 1 calc(25% - 16px); /* Kartların genişliği %25 ve boşluklara göre ayarlanır */
+  max-width: 200px; /* Maksimum genişlik */
+  margin: 8px; /* Kartlar arasında ek boşluk */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Gölge eklemek için */
+  border-radius: 8px; /* Kartlara köşe yuvarlama */
+  background-color: #f9f9f9; /* Kartların arka plan rengi */
+}
+.pokedex-winner {
+  color: #4caf50;
+}
+.pokedex-loser {
+  color: #e91e63;
+}
